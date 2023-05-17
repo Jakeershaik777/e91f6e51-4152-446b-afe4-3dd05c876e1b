@@ -1,0 +1,236 @@
+/* .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 8px 8px;
+    
+    border-radius: 20px;
+  }
+  
+  .search-box input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #f7f7f7;
+  }
+  
+  .search-box input[type="text"]:focus {
+    box-shadow: 0 0 5px #ff573a;
+  }
+  
+  .search-box button {
+    width: 20%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fd857f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-box button:hover {
+    background-color: #ff4828;
+  }
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-gap: 20px;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 10px;
+        max-width: 600px;
+      }
+    }
+  
+    .bday-card {
+      background-color: #f3e1be;
+      width: 280px;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    .bday-card img {
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    
+    
+    .place-rating-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .event-name {
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    /* Rating stars styles */
+    
+    /* .checked {
+      color: orange;
+    }
+    
+    .rating-stars {
+      font-size: 20px;
+    }
+  
+    #rating-button{
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .on {
+      color: #000000;
+    }
+    .off {
+      color: #ccc;
+    } */
+    .search-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      margin: 8px 8px;
+      
+      /* border-radius: 20px; */
+    }
+    .blue-background{
+      background-color: lightsteelblue;
+    }
+    .search-box input[type="text"] {
+      width: 25%;
+      padding: 10px;
+      /* border-radius: 20px; */
+      border: none;
+      outline: none;
+      background-color:white;
+      font-family: 'Comic Sans MS';
+      text-align: center;
+    }
+    
+    ::placeholder{
+      color: black;
+    }
+    .search-box input[type="text"]:focus {
+      box-shadow: 0 0 5px #ff573a;
+      padding:12px;
+      color:black;
+    }
+    
+    .search-box button {
+      width: 10%;
+      padding: 10px;
+      border: 5px;
+      color:white;
+      background-color: #0070BB;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      font-family: 'Comic Sans MS';
+      font-size:15px;
+    }
+    
+    .search-box button{
+      background-color: #0070BB;
+      margin-left:25px;
+    }
+    
+      .grid-container {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 20px;
+        /* justify-content: center; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+      
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: repeat(3, minmax(200px, 1fr));
+          padding: 10px;
+          max-width: 600px;
+        }
+      }
+    
+      .bday-card {
+        background-color: white;
+        width: 280px;
+        margin-top: 20px;
+        /* padding: 10px; */
+        border-radius: 15px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        box-sizing: border-box;
+        font-family: 'Comic Sans MS';
+      }
+      .bday-card img {
+        position: relative;
+        object-fit: cover;
+        border-radius: 5px;
+        width:100%;
+        max-height: 500px;
+      }
+      
+      
+      .place-rating-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding:0 5px;
+      }
+      
+      .event-name {
+        text-align: center;
+        margin-top: 10px;
+    
+      }
+      
+      /* Rating stars styles */
+      
+      .checked {
+        color: orange;
+      }
+      
+      .rating-stars {
+        font-size: 20px;
+      }
+    
+      #rating-button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .on {
+        color: gold;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      .off {
+        color: #ccc;
+        font-size: 24px;
+        cursor: pointer;
+      }
